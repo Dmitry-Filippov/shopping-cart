@@ -1,0 +1,51 @@
+.list-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2195f386;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  min-height: 50px;
+  margin-top: 10px;
+}
+
+.list-item:first-of-type {
+  margin-top: 0;
+}
+
+.list-item__id {
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.list-item__name {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60%;
+}
+
+.list-item__price {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  padding-top: 4px;
+  width: 19%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list-item__del-button {
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+  color: #a13d3d;
+}

@@ -8,11 +8,14 @@ h3,
 p,
 input,
 form,
-button {
+button,
+ul,
+li {
   margin: 0;
   padding: 0;
   border: none;
   background: none;
+  box-sizing: border-box;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

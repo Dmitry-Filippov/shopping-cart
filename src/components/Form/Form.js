@@ -2,7 +2,7 @@ import "./Form.css";
 
 const Form = () => {
   return (
-    <section className="form">
+    <div className="form">
       <h1 className="form__title">Добавление товара</h1>
 
       <form className="form__form">
@@ -31,7 +31,7 @@ const Form = () => {
           Добавить
         </button>
       </form>
-    </section>
+    </div>
   );
 };
 

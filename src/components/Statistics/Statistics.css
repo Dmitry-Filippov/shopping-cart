@@ -1,0 +1,9 @@
+.statistics {
+  padding-top: 30px;
+}
+
+.statistics__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2196f3;
+}
