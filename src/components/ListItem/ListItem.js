@@ -1,12 +1,29 @@
-import "./ListItem.css"
+import "./ListItem.css";
 
-const ListItem = () => {
+const ListItem = ({ id, name, price, items, setItems, isDiscount }) => {
+  function deleteItem() {
+    const newArr = items.slice();
+    for (let i = 0; i < newArr.length; i++) {
+      if (newArr[i].id === id) {
+        newArr.splice(i, 1);
+      }
+    }
+    setItems(newArr);
+  }
+
   return (
     <li className="list-item">
-      <p className="list-item__id">13.</p>
-      <h3 className="list-item__name">товар для дома</h3>
-      <p className="list-item__price">100р.</p>
-      <button className="list-item__del-button">Удалить товар</button>
+      <p className="list-item__id">{id}.</p>
+      <h3 className="list-item__name">{name}</h3>
+      <p className="list-item__price">
+        <span className={`${isDiscount ? "list-item__span" : ""}`}>
+          {price}
+        </span>
+        р.
+      </p>
+      <button className="list-item__del-button" onClick={deleteItem}>
+        Удалить товар
+      </button>
     </li>
   );
 };

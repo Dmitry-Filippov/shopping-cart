@@ -43,6 +43,10 @@
   overflow: hidden;
 }
 
+.list-item__span {
+  text-decoration: line-through;
+}
+
 .list-item__del-button {
   font-weight: 400;
   font-size: 15px;
