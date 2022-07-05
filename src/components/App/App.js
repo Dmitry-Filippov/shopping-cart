@@ -1,3 +1,4 @@
+import Discount from "../Discount/Discount";
 import Form from "../Form/Form";
 import ItemsList from "../ItemsList/ItemsList";
 import Statistics from "../Statistics/Statistics";
@@ -9,6 +10,7 @@ function App() {
       <Form />
       <ItemsList />
       <Statistics />
+      <Discount />
     </main>
   );
 }
