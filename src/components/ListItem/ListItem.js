@@ -1,6 +1,14 @@
 import "./ListItem.css";
 
-const ListItem = ({ id, name, price, items, setItems, isDiscount }) => {
+const ListItem = ({
+  id,
+  name,
+  price,
+  items,
+  setItems,
+  isDiscount,
+  discount,
+}) => {
   function deleteItem() {
     const newArr = items.slice();
     for (let i = 0; i < newArr.length; i++) {
@@ -19,6 +27,7 @@ const ListItem = ({ id, name, price, items, setItems, isDiscount }) => {
         <span className={`${isDiscount ? "list-item__span" : ""}`}>
           {price}
         </span>
+        {isDiscount ? ` ${price - (price / 100) * discount}` : ""}
         р.
       </p>
       <button className="list-item__del-button" onClick={deleteItem}>

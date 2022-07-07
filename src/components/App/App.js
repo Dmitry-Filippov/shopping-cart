@@ -17,19 +17,19 @@ function App() {
       newSum += +item.price;
     });
     setSum(newSum);
-  }, [items]);
+  }, [items, discount, isDiscount]);
 
   useEffect(() => {
-    if (sum <= discount) {
+    if (sum === 0) {
       setIsDiscount(false);
       setDiscount(0);
     }
-  }, [sum, discount]);
+  }, [sum]);
 
   return (
     <main className="app">
       <Form setItems={setItems} items={items} />
-      <ItemsList items={items} setItems={setItems} isDiscount={isDiscount} />
+      <ItemsList items={items} setItems={setItems} isDiscount={isDiscount} discount={discount} />
       <Statistics
         length={items.length}
         sum={sum}

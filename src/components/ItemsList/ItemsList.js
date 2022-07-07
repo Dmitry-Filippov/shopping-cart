@@ -1,7 +1,7 @@
 import ListItem from "../ListItem/ListItem";
 import "./ItemsList.css";
 
-const ItemsList = ({ items, setItems, isDiscount }) => {
+const ItemsList = ({ items, setItems, isDiscount, discount }) => {
   if (items.length > 0) {
     return (
       <div className="items-list">
@@ -17,6 +17,7 @@ const ItemsList = ({ items, setItems, isDiscount }) => {
                 items={items}
                 setItems={setItems}
                 isDiscount={isDiscount}
+                discount={discount}
               />
             );
           })}

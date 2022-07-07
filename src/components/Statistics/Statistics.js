@@ -6,7 +6,7 @@ const Statistics = ({ length, sum, discount, isDiscount }) => {
       <h2 className="statistics__title">
         Сейчас в корзине {length} товаров на общую сумму{" "}
         <span className={`${isDiscount ? "statistics__span" : ""}`}>{sum}</span>{" "}
-        {isDiscount ? sum - discount : ""} руб.
+        {isDiscount ? sum - (sum/100*discount) : ""} руб.
       </h2>
     </div>
   );
