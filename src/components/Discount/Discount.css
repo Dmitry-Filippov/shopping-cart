@@ -44,3 +44,19 @@
   font-size: 12px;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1020px) {
+  .discount__form {
+    width: 60%;
+  }
+
+  .discount__input, .discount__sub-button {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .discount__res-button {
+    padding: 5px;
+    font-size: 10px;
+  }
+}

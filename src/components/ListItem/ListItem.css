@@ -53,3 +53,21 @@
   cursor: pointer;
   color: #f3213d;
 }
+
+@media screen and (max-width: 1020px) {
+  .list-item__id {
+    font-size: 10px;
+  }
+
+  .list-item__name {
+    font-size: 15px;
+  }
+
+  .list-item__price {
+    font-size: 12px;
+  }
+
+  .list-item__del-button {
+    font-size: 12px;
+  }
+}

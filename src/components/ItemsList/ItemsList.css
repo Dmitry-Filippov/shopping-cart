@@ -14,3 +14,14 @@
   padding-top: 13px;
   list-style: none;
 }
+
+@media screen and (max-width: 1020px) {
+  .items-list {
+    padding-top: 50px;
+  }
+
+  .items-list__title {
+    text-align: center;
+    font-size: 24px;
+  }
+}
