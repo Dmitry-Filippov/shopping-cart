@@ -52,11 +52,5 @@
 
   .discount__input, .discount__sub-button {
     padding: 5px;
-    font-size: 10px;
-  }
-
-  .discount__res-button {
-    padding: 5px;
-    font-size: 10px;
   }
 }
