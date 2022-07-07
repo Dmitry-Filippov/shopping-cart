@@ -24,7 +24,7 @@ function App() {
       setIsDiscount(false);
       setDiscount(0);
     }
-  }, [sum]);
+  }, [sum, discount]);
 
   return (
     <main className="app">
